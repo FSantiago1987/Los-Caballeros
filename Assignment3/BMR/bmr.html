@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Los Caballeros Restaurant</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap" rel="stylesheet">
+    <script src="script-bmr.js"></script>   
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-bmr.css" />
+</head>
+<body id="top">
+    <div class="nav-list">
+        <ul id="topnav">
+            <li><a href="../MexicanGrill/index.html">Home</a></li>
+            <li><a href="../AboutUs/aboutUs.html">About Us</a></li>
+            <li><a href="../Order/Neworder.html">Order</a></li>
+            <li><a href="../Calendar1/Calendar1.html">Schedule</a></li>
+            <li><a href="bmr.html">BMR</a></li>
+            <li><a href="../SignUp/Membership.html">Sign Up</a></li>
+        </ul>
+    </div>
+    <script src="../MexicanGrill/script-index.js"></script>
+    <!-- ****************************************************** -->
+    <div id="head">
+        <div class="background-image">
+
+        </div>
+        <h1>Los Caballeros Restaurant</h1>
+        <h3>Best Mexican Restaurant in Toronto</h3>
+    </div>
+    <!-- ****************************************************** -->
+    <div id="back-img">
+        <div id="bmr">
+            <form>
+                <fieldset id="contactinfo">
+                    <label for="gender">
+                        Gender :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="gender" id="gender">
+                            <option value="selectGender">select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </label><br />
+                    <label for="ageinput">
+                        Age :
+                        <input type="text" id="ageinput" name="age" size="2" />
+                    </label><br />
+                    <label for="weight">
+                        Weight :
+                        <input type="text" id="weight" name="weight" size="2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="weightmetric" id="weightmetric">
+                            <option value="selectMetric">select metric</option>
+                            <option value="pounds">pounds</option>
+                            <option value="kg">kg</option>
+                        </select>
+                    </label>
+                    <br />
+                    <label for="height">
+                        Height :
+                        <input type="text" id="height" name="height" size="2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <select name="heightmetric" id="heightmetric">
+                            <option value="selectMetric">select metric</option>
+                            <option value="inches">inches</option>
+                            <option value="cm">cm</option>
+                        </select>
+                    </label>
+                    <br />
+                    <h3 style="font-size:17px;padding-top:20px;">Please select your activity level</h3>
+                    <div class="mlabel">
+                        <label class="radio">
+                            <input type="radio" value="1.53" name="activityLevel" id="activityLevel1">
+                            <span>I am sedentary (little or no exercise)</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" value="1.53" name="activityLevel" id="activityLevel2">
+                            <span>I am lightly active (light exercise or sports 1-3 days per week)</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" value="1.76" name="activityLevel" id="activityLevel3">
+                            <span>I am moderately active (moderate exercise or sports 3-5 days per week)</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" value="1.76" name="activityLevel" id="activityLevel4">
+                            <span>I am very active (hard exercise or sports 6-7 days per week)</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" value="2.25" name="activityLevel" id="activityLevel5">
+                            <span>I am super active (very hard exercise or sports and a physical job)</span>
+                        </label>
+                        <span class="clearElement"></span>
+                    </div>
+                </fieldset>
+                <fieldset id="submitbutton">
+                    <input type="submit" id="button" value="Submit" onclick="Alert()" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- ****************************************************** -->
+    <footer id="social-media">
+        <ul>
+            <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+        </ul>
+        <p>
+            &copy;
+            <script>document.write(new Date().getFullYear())</script> Los Caballeros Restaurant - Fabio Luiz - Centennial College
+        </p>
+    </footer>
+</body>
+</html>

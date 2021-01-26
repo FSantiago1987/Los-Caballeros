@@ -1,0 +1,244 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+#video {
+    background: linear-gradient(to left, red, black 100%);
+    background: url('images/back4.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 60vh;
+}
+
+#videoPos {
+    padding-left: 22%;
+    padding-top: 40px;
+}
+
+video{
+    border:2px solid black;
+}
+
+a {
+    color: white;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196f3;
+    border: 0;
+    margin: 40px auto;
+}
+
+/*----------------------------
+    NAV MENU
+----------------------------*/
+
+.nav-list {
+    background: linear-gradient(to left, red, #000 100%);
+    color:white;
+}
+
+.nav-list ul {
+    list-style-type:none;
+    font-size:0px;
+}
+
+.nav-list ul li{
+    padding:16px;
+    text-align:center;
+    font-size:1.2rem;
+    border-bottom:1px solid white;
+    transition:background-color 0.4s;
+}
+.nav-list ul li:hover{
+    background-color:black;
+}
+
+.h{
+    padding: 16px;
+    text-align: center;
+    font-size: 19.2px;
+    transition: background-color 0.4s;
+    margin-left:42%;  
+}
+
+.h:hover{
+    background-color:black;
+}
+
+@media(min-width:700px){
+    .nav-list ul {
+        text-align: right;
+    }
+
+
+    .nav-list ul li {
+        display:inline-block;
+        border-bottom: 0px;
+        border-left: 1px solid black;
+        text-align: left;
+    }
+    .h {
+        display: inline-block;
+        border-bottom: 0px;
+        border-left: 1px solid black;
+        text-align: left;
+        margin-left:0px;
+    }
+    #hello {
+        width:60%;
+    }
+}
+
+/*----------------------------
+    BANNER
+----------------------------*/
+
+#head {
+    background: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/back1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 10vh;
+}
+
+    #head h1, #head h3 {
+        font-size: 15px;
+        text-shadow: 2px 2px black;
+        margin-bottom: 40px;
+        color: white;
+        font-family: Mexican2;
+    }
+
+    #head h1 {
+        font-size: 35px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        color: maroon;
+    }
+
+@media(max-width:800px){
+
+    #head {
+        min-height:600px;
+    }
+    #head h1 {
+        font-size: 36px;
+    }
+    #head h3 {
+        font-size: 18px;
+    }
+}
+
+@font-face {
+    font-family: Mexican;
+    src: url('Hottaml.TTF');
+    font-family: Mexican2;
+    src: url('La Tequila.TTF');
+}
+
+/*----------------------------
+    INTRO
+----------------------------*/
+
+.intro-text {
+    line-height: 2;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.intro-text p {
+    font-size:49px;
+    text-align: center;
+    width: 70%;
+    margin-left:18%;
+    color:beige;
+    text-shadow: 1px 1px black;
+    font-family: Restaurant2;
+    font-weight:500;
+}
+
+@font-face {
+    font-family: Restaurant;
+    src: url('Shadow-7WdR.TTF');
+    font-family: Restaurant2;
+    src: url('FallIsComingRegular-Mx9B.TTF');
+}
+
+@media(max-width:800){
+    .intro-text p{
+        font-size:30px;
+    }
+}
+
+/*----------------------------
+    FOOTER
+----------------------------*/
+
+
+footer {
+    background-color: #131622;
+    color: white;
+    text-align: center;
+    background: linear-gradient(to right, red, #000 100%);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: rgba(255,255,255,.6);
+    margin-bottom: 10px;
+}
+
+footer ul {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul li {
+   margin: 0 8px;
+}
+
+footer ul li a {
+  font-size: 36px;
+  cursor: pointer;
+}
+
+@media(max-width:800px) {
+    footer {
+        padding: 80px 15px;
+    }
+}

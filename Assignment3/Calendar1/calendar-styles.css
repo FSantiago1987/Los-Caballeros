@@ -1,0 +1,202 @@
+﻿
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+  hgroup, menu,  section {
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+th {
+    color: seagreen;
+    font-weight: 900;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#calendar {
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* page header */
+header {
+    font-size: 48px;
+    border-bottom: 35px solid rgb(235,93,52);
+    border-left: 35px solid #EFE0B9;
+    height: 92px;
+    background-color: #DCD45E;
+}
+
+    header img {
+        position: relative;
+        left: -35px;
+        display: block;
+    }
+
+.mexican {
+    position: absolute;
+    top: 15px;
+    margin-left: 26%;
+    color: darkgreen;
+    font-size: 32px;
+    font-weight: 900;
+    text-shadow: 1.5px 1.5px goldenrod;
+}
+
+.number {
+    color: goldenrod;
+}
+
+.food {
+    color: yellowgreen;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.order {
+    color: seagreen;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.client {
+    color: seagreen;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: italic;
+}
+
+hr {
+    top: 15px;
+    font-size: 20px;
+    font-weight: 900;
+    width: 81%;
+    position: absolute;
+    color: #fff;
+    background-color: #f00;
+    height: 10px;
+    z-index: 0;
+    margin-left: 19%;
+}
+
+/* navigation */
+nav {
+    font-size: 18px;
+    font-weight: 900;
+    position: absolute;
+    top: 60px;
+    width: 95%;
+    margin-left: 5%;
+    color: white;
+}
+
+    nav ul {
+        text-align: center;
+    }
+
+        nav ul li {
+            display: inline-block;
+            padding: 8px 15px;
+            margin: 0 3px;
+            z-index: 2;
+        }
+
+            nav ul li:hover {
+                background: white;
+                color: rgb(235,93,52);
+            }
+
+/* main content */
+article {
+    background: white;
+    border-top: 1px solid rgb(235,93,52);
+}
+
+    article h2 {
+        font-size: 1.2em;
+        font-weight: bold;
+        width: 182px;
+        text-align: center;
+        padding: 10px 5px 0;
+    }
+
+    article p {
+        margin-bottom: 6px;
+        line-height: 1.2em;
+    }
+
+    article table {
+        width: 100%;
+        text-align: center;
+        table-layout: fixed;
+    }
+
+        article table caption {
+            padding: 5px;
+            width: 182px;
+        }
+
+    article tr td:first-child, article tr td:last-child {
+        background: #DDDDDD;
+    }
+
+    article th, article td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+        width: 14.2857%;
+    }
+
+    article tr td:first-of-type, article tr th:first-of-type {
+        border-left: 0;
+    }
+
+    article tr td:last-of-type, article tr th:last-of-type {
+        border-right: 0;
+    }
+
+    article th {
+        font-weight: 700;
+        background: #EFE0B9;
+    }
+
+    article td p:first-of-type {
+        font-weight: 900;
+        text-align: right;
+    }
+
